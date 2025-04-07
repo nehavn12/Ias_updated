@@ -21,18 +21,18 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "Manish Rathi",
-    course: "Data Science",
+    course: "Student",
     review:
-      "Thanks to Jetking's placement cell, I secured a job at a top tech company even before completing my course. Their support was invaluable.",
+      "Krishna was very helpful in getting my IDLV done. He is genuinely interested in helping people and this shows in his work. Very methodical and prompt ! Highly recommended.",
     image: "/kritika_sharma.png",
     bgImage: "/testimonials.png",
   },
   {
     id: 2,
     name: "Anita Verma",
-    course: "Networking",
+    course: "Student",
     review:
-      "Jetking transformed my career. The hands-on approach and expert trainers made all the difference. Highly recommended!",
+      "Krishna was very helpful in getting my IDLV done. He is genuinely interested in helping people and this shows in his work. Very methodical and prompt ! Highly recommended.",
       image: "/kritika_sharma.png",
       bgImage: "/testimonials.png",
   },
