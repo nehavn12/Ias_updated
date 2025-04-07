@@ -64,7 +64,6 @@ const blogPosts = [
 const BlogSection = () => {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   // Handle navigation clicks manually
@@ -145,16 +144,12 @@ const BlogSection = () => {
                 return '<span class="' + className + '"></span>';
               },
             }}
-            onSlideChange={(swiper) => {
-              setActiveIndex(swiper.realIndex);
-            }}
             onSwiper={(swiper) => {
               setSwiperInstance(swiper as unknown as SwiperType);
-              setActiveIndex(swiper.realIndex);
             }}
             className="blog-swiper"
           >
-            {blogPosts.map((post, index) => (
+            {blogPosts.map((post) => (
               <SwiperSlide key={post.id} className="py-6">
                 <div 
                   className="bg-white rounded-lg overflow-hidden h-full transition-all duration-300 shadow-md border border-gray-100 swiper-slide-content"

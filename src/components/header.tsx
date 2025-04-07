@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
-import Home from "@/app/page";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
